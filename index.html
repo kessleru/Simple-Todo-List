@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>
+          Minhas Tarefas<span>.</span>
+        </h1>
+        <p id="date"></p>
+      </header>
+
+      <div class="todo-input">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="O que você precisa fazer?"
+        />
+        <button id="add-task"></button>
+      </div>
+
+      <div class="filters">
+        <span class="filter active" data-filter="all">Todas</span>
+        <span class="filter" data-filter="active">Ativas</span>
+        <span class="filter" data-filter="completed">Completas</span>
+      </div>
+
+      <div class="todo-container">
+        <ul id="todo-list">
+          <li class="todo-item">
+            <label class="checkbox-container">
+              <input type="checkbox" class="todo-checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <span class="todo-item-text">Buy groceries</span>
+            <button class="delete-btn"><i class="fas fa-times"></i></button>
+          </li>
+        </ul>
+
+        <div class="empty-state hidden">
+          <i class="fas fa-clipboard-list"></i>
+          <p>Nenhuma tarefa ainda</p>
+        </div>
+      </div>
+
+      <footer>
+        <p id="items-left">0 items left</p>
+        <button id="clear-completed">Limpar completas</button>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
