@@ -180,10 +180,7 @@ var horas = date.slice(0, 2);
 
 setTimeout(() => {
   const welcomeScreen = document.getElementById('welcomeScreen');
-  const mainContent = document.getElementById('mainContent');
-
   welcomeScreen.classList.add('hidden');
-  mainContent.classList.add('visible');
 }, 2500);
 
 const message = document.querySelector('.welcome-message');
