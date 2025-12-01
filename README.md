@@ -1,4 +1,4 @@
-# ✅ Simple Todo List
+# Todo-List-js
 
 [![Demo](https://img.shields.io/badge/🌐-Ver_Site-181717)](https://kessleru.github.io/Simple-Todo-List/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
