@@ -105,7 +105,7 @@ function renderTodos() {
     if (days) {
       todoDateEl = document.createElement('span');
       todoDateEl.classList.add('todo-item-date');
-      todoDateEl.innerHTML = `${days} day${days > 1 ? 's' : ''} ago`;
+      todoDateEl.innerHTML = `${days} dia${days > 1 ? 's' : ''} atrás`;
     }
 
     const deleteBtn = document.createElement('button');
