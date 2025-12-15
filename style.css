@@ -165,6 +165,8 @@ header p {
   color: var(--gray);
   border-bottom: 2px solid transparent;
   transition: all 0.2s;
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--primary) 20%, transparent);
+  outline: none;
 }
 
 .filter:hover {
@@ -311,6 +313,7 @@ footer {
   color: var(--gray);
   cursor: pointer;
   user-select: none;
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--danger) 20%, transparent);
   transition: all 0.2s;
 }
 
