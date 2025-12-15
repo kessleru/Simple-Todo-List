@@ -161,6 +161,7 @@ header p {
 .filter {
   padding: 5px 3px;
   cursor: pointer;
+  user-select: none;
   color: var(--gray);
   border-bottom: 2px solid transparent;
   transition: all 0.2s;
@@ -309,6 +310,7 @@ footer {
   border: none;
   color: var(--gray);
   cursor: pointer;
+  user-select: none;
   transition: all 0.2s;
 }
 
